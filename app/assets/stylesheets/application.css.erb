@@ -1,0 +1,428 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require dialog
+ *= require dialog-wilma
+ *= require_tree .
+ */
+
+    @import url(//fonts.googleapis.com/css?family=Lato:400,900);
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+ 
+@font-face {
+  font-family: 'Nevis';
+  src: url("./nevis.ttf");
+       
+}
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url("./quicksand.otf");
+}
+
+body{
+    padding-top:110px;
+    font-family: "Quicksand", inherit;
+    font-size: 1.8em;
+}
+
+html>h1,h2,h3,h4,h5,h6{
+    font-family: "Nevis", inherit;
+}
+
+p{
+    padding-bottom: 30px;
+}
+
+ h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 4em;
+    font-family: "Nevis";
+ }
+
+ h2.small-h2{
+    color:#514e4e;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-family: "Quicksand";
+ }
+
+ h2{
+    font-size: 2.4em;
+    text-transform: uppercase;
+ }
+
+ h3{
+    text-transform: uppercase;
+ }
+
+
+.red{
+    color:#d9534f;
+}
+
+.muted{
+    color:rgb(180,180,180);
+}
+
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#owl-demo{
+    margin-top:-30px;
+}
+
+
+
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        background-color: #eee;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+
+
+    .animate {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .info-card {
+        width: 100%;
+        border: 1px solid rgb(215, 215, 215);
+        position: relative;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .info-card > img {
+        width: 100px;
+        margin-bottom: 60px;
+    }
+    .info-card .info-card-details,
+    .info-card .info-card-details .info-card-header  {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        padding: 0 15px;
+        background: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .info-card .info-card-details::-webkit-scrollbar {
+        width: 8px;
+    }
+    .info-card .info-card-details::-webkit-scrollbar-button {
+        width: 8px;
+        height: 0px;
+    }
+    .info-card .info-card-details::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .info-card .info-card-details::-webkit-scrollbar-thumb {
+        background: rgb(160, 160, 160);
+    }
+    .info-card .info-card-details::-webkit-scrollbar-thumb:hover {
+        background: rgb(130, 130, 130);
+    }           
+
+    .info-card .info-card-details .info-card-header {
+        height: auto;       
+        bottom: 100%;
+        padding: 10px 5px;
+    }
+    .info-card:hover .info-card-details {
+        bottom: 0px;
+        overflow: auto;
+        padding-bottom: 25px;
+    }
+    .info-card:hover .info-card-details .info-card-header {
+        position: relative;
+        bottom: 0px;
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+    .info-card .info-card-details .info-card-header h1, 
+    .info-card .info-card-details .info-card-header h3 {
+        color: rgb(62, 62, 62);
+        font-size: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .info-card .info-card-details .info-card-header h3 {
+        color: rgb(142, 182, 52);
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .info-card .info-card-details .info-card-detail .social {
+        list-style: none;
+        padding: 0px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .info-card .info-card-details .info-card-detail .social a {
+        position: relative;
+        display: inline-block;
+        min-width: 40px;
+        padding: 10px 0px;
+        margin: 0px 5px;
+        overflow: hidden;
+        text-align: center;
+        background-color: rgb(215, 215, 215);
+        border-radius: 40px;
+    }
+
+    a.social-icon {
+        text-decoration: none !important;
+        box-shadow: 0px 0px 1px rgb(51, 51, 51);
+        box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
+    }
+    a.social-icon:hover {
+        color: rgb(255, 255, 255) !important;
+    }
+    a.facebook {
+        color: rgb(59, 90, 154) !important;
+    }
+    a.facebook:hover {      
+        background-color: rgb(59, 90, 154) !important;
+    }
+    a.twitter {
+        color: rgb(45, 168, 225) !important;
+    }
+    a.twitter:hover {
+        background-color: rgb(45, 168, 225) !important;
+    }
+    a.github {
+        color: rgb(51, 51, 51) !important;
+    }
+    a.github:hover {
+        background-color: rgb(51, 51, 51) !important;
+    }
+    a.google-plus {
+        color: rgb(244, 94, 75) !important;
+    }
+    a.google-plus:hover {
+        background-color: rgb(244, 94, 75) !important;
+    }
+    a.linkedin {
+        color: rgb(1, 116, 179) !important;
+    }
+    a.linkedin:hover {
+        background-color: rgb(1, 116, 179) !important;
+    }
+
+
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul{
+            padding:0;
+        }
+        .banner ul li { float: left; min-height: 550px; }
+
+
+.slide1{
+    min-height: 500px;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+}
+.slide2{
+}
+.slide3{
+}
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.thumbnail .glyphicon{
+    font-size: 8em;
+    color:#eb1a2f;
+}
+
+.thumbnail .glyphicon-chevron-down{
+    font-size: 1.2em;
+}
+
+.thumbnail{
+    background-color: rgb(249,249,249);
+    padding:20px 0;
+    -webkit-transition:all ease-in-out .4s;
+    transition: all ease-in-out .4s;
+    border-color: rgb(246,246,246);
+}
+
+.thumbnail:hover{
+    background-color: rgb(240,240,240);
+}
+
+.thumbnail p{
+    text-transform: uppercase;
+}
+
+.button-red{
+    background-color: rgb(0,0,0,0);
+    border:solid 1px #d9534f;
+    padding:19px 37px;
+
+    color:white;
+    font-weight: lighter;
+    font: 100 18px/18px;
+    text-transform: uppercase;
+}
+
+.button-red-on-white{
+    background-color: white;
+    border:solid 1px #d9534f;
+    padding:19px 37px;
+
+    color:#333;
+    font-weight: lighter;
+    font: 100 18px/18px;
+    text-transform: uppercase;
+}
+
+
+.proud-of{
+    padding:70px 0;
+    background-color: rgb(245,245,245);
+    position: relative;
+    z-index: 999;
+}
+
+.mid-intro{
+    margin-bottom: 80px;
+    
+}
+
+.mid-glyph{
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top:-100px;
+    font-size: 4em;
+    color: rgb(142, 182, 52);
+}
+
+.glyph-over{
+    margin-top:-57px;
+    margin-bottom:70px;
+}
+
+div.our-team{
+    padding-bottom:150px;
+}
+
+div.our-services{
+    padding:70px 0;
+}
+
+li.divider{
+    border-bottom: solid 1px lightgrey;
+    margin-bottom: 20px;
+}
+
+div.our-services h4{
+    text-align: left;
+}
+
+div.our-services ul li{
+    text-align: left;
+    color:#d9534f;
+}
+
+
+div.list-align{
+    padding-left: 130px;
+}
+
+div.about-us{
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
+
+footer{
+    background-color: #333;
+}
+
+footer{
+    color:white;
+}
+
+.contact-section{
+    padding-left:150px;
+}
+
+.banner h1{
+    color:white;
+}
+
+.banner p{
+    color:#999;
+}
+.navbar-brand h1{
+    font-size: 1.2em;
+    letter-spacing: -2px;
+    line-height: 1em;
+    padding-top:0px;
+    margin-top:0;
+    color:white;
+}
+
+.logo-glyph{
+    color:rgb(142, 182, 52);
+}
+
+.edinburgh-house-renovations{
+    color:#999;
+    padding-top:90px;
+    padding-bottom: 25px;
+}
+
+.screen-info{
+    padding-left: 150px;
+}
+
+.banner p{
+    color:white;
+}

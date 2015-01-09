@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html id="edinburgh-renovations">
+<head>
+  <title>House renovations Edinburgh - Renovation Group</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+ <%= metamagic %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+
+  <%= javascript_include_tag "application"%>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<!-- Nav -->
+
+	        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		     
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+		      <ul class="nav navbar-nav">
+		      <div class="navbar-brand"><h1>Renovation Group 
+		      <span class="glyphicon glyphicon-leaf logo-glyph"></span>
+		      </h1></div>
+		       
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		       <li><a href="#edinburgh-renovations">Home</a></li>
+		        <li><a href="#about-house-renovation-services-edinburgh">About</a></li>
+		        <li><a href="#house-renovation-for-landlords"><span style="display:none;">House</span>What We Do</a></li>
+		        <li><a href="#house-renovations-in-edinburgh">Renovations</a></li>
+		        <li><a href="#cheap-house-renovation">Services</a></li>
+		        <li><a href="#contact-cheap-house-renovations-edinburgh">Contact</a></li>		        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+<!-- Nav -->
+
+
+
+
+
+<%= yield %>
+
+<footer>
+
+
+	<section class="footer row">
+		<div class="container">
+				<center><h2>Get In Touch</h2></center>
+
+				<div class="row">
+						<div class="col-sm-12 col-md-4">
+							<address>
+								16/2 Ardshiel Avenue<br>
+								EH7 4LL<br>
+								Edinburgh
+							</address>
+						</div>
+						<div class="col-sm-12 col-md-4 text-center ">
+						
+						    <a class="btn btn-social-icon btn-dropbox btn-lg"><i class="fa fa-dropbox"></i></a>
+						
+						    <a class="btn btn-social-icon btn-foursquare btn-lg"><i class="fa fa-foursquare"></i></a>
+						 
+						    <a class="btn btn-social-icon btn-google-plus btn-lg"><i class="fa fa-google-plus"></i></a>
+						    <a class="btn btn-social-icon btn-instagram btn-lg"><i class="fa fa-instagram"></i></a>
+						    <a class="btn btn-social-icon btn-linkedin btn-lg"><i class="fa fa-linkedin"></i></a>
+						   
+						    <a class="btn btn-social-icon btn-twitter btn-lg"><i class="fa fa-twitter"></i></a>
+						   
+						</div>
+						<div class="col-sm-12 col-md-4 mobile-info screen-info">
+							+447719731397<br>
+							thomas.webdesign<br>@yahoo.com
+						</div>
+				</div>
+		</div>	
+
+		<div class="row edinburgh-house-renovations">
+		<div class="col-sm-12 col-md-3">House Renovation Edinburgh</div>
+		<div class="col-sm-12 col-md-3">Cheap House Renovations</div>
+		<div class="col-sm-12 col-md-3">Renovations in Edinburgh</div>
+		<div class="col-sm-12 col-md-3">Home Renovation Edinburgh</div>
+		</div>
+
+	</section>
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+ <script>
+      (function() {
+
+        var dlgtrigger = document.querySelector( '[data-dialog]' ),
+          somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+          dlg = new DialogFx( somedialog );
+
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+
+      })();
+    </script>
+
+<script type="text/javascript">
+	$(function() {
+    var slidey = $('.banner').unslider(data),
+    data = slidey.data.dots();
+
+});
+
+
+	 var unslider = $('.banner').unslider({
+	 	speed: 900,
+	 	delay: 4500
+	 });
+    
+    $('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+        
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        unslider.data('unslider')[fn]();
+    });
+</script>
+
+</body>
+</html>
