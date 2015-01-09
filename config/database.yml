@@ -19,7 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: adapter: postgresql
-  database: renovation_db
+  adapter: postgresql
+  encoding: unicode
+  database: renovation_production
   pool: 5
-  timeout: 5000
+  username: 
+  password: 

@@ -26,11 +26,6 @@ color: white;
 }
 
 
-.carousel .item {-webkit-transition: opacity 0.8s; -moz-transition: opacity 0.8s; -ms-transition: opacity 0.8s; -o-transition: opacity 0.8s; transition: opacity 0.8s;}
-.carousel .active.left {left:0;opacity:0;z-index:2;}
-.carousel .active.right{right:0;opacity:0;z-index: 2;}
-}
-
 .btn-lg{
 	
 }
