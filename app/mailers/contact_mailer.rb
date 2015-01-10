@@ -7,8 +7,10 @@ class ContactMailer < ActionMailer::Base
   #   en.contact_mailer.notify.subject
   #
   def notify(params)
-
-
-    mail to: "renovationgroupedin@gmail.com", subject: 'Mail from website'
+    @body = params["/contact"][:message]
+    @from = params["/contact"][:email]
+    @phone = params["/contact"][:phone]
+    @name = params["/contact"][:name]
+    mail to: "renovationgroupedin@gmail.com", subject: 'Mail from website', from: "#{@from}"
   end
 end

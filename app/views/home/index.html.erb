@@ -348,25 +348,34 @@ meta description: "07719731397 Cheapest house renovations in Edinburgh - Fixed p
               <h2>Contact Us</h2>
 
               <%= simple_form_for home_path, url: '/contact' do |t| %>
-                <%= t.input :name %>
-
-                <%= t.submit %>
-
-              <% end %>
- 
-  <div class="form-group">
+                
+                 
+            <div class="form-group">
     <label for="name" class="muted">Name</label>
-    <input type="text" class="form-control">
+    <%= t.input :name, label: false %>
   </div>
+
+
+<div class="form-group">
+    <label for="phone" class="muted">Phone</label>
+   <%= t.input :phone, label: false %>
+  </div>
+
+<div class="form-group">
+    <label for="email" class="muted">Email</label>
+         <%= t.input :email, label: false %>
+  </div>
+
 
   <div class="form-group">
     <label for="name" class="muted">Message</label>
-    <textarea class="form-control"></textarea>
+     <%= t.input :message, as: :text, label: false %>
   </div>
-  
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+                  
 
+                <%= t.submit 'Contact', class: 'btn btn-default' %>
+
+              <% end %>
 
               <div style=""><button class="btn btn-default" style="margin-top:50px;" data-dialog-close>Close</button></div>
             </div>
