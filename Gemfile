@@ -20,6 +20,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'simple_form'
 gem 'rack-cache'
 gem 'actionpack-page_caching'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

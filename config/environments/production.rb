@@ -59,7 +59,8 @@ config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deplo
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  # config.assets.precompile += %w( search.js )
+  config.assets.paths << "#{Rails.root}/app/assets/html"
+    config.assets.precompile += %w(index.html)
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
