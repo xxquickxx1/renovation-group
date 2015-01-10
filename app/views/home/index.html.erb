@@ -10,6 +10,7 @@ meta description: "07719731397 Cheapest house renovations in Edinburgh - Fixed p
         <li style="background-image: url('<%= asset_path('1.jpg') %>');">
         <div class="container text-center" style="padding-top:90px;">
           <h1>House Renovations Edinburgh</h1>
+          <h2 style="color:white;">07708989073</h2>
           <p>Cheapest and the quickest house renovations for landlords, house/hotel owners.</p>
           
           <a class="button-red" href="#about-house-renovation-services-edinburgh">Read More</a>
@@ -101,6 +102,7 @@ meta description: "07719731397 Cheapest house renovations in Edinburgh - Fixed p
         <div class="container text-center">
           <h1><i>"</i>House renovations for landlords and home owners in and around Edinburgh area<i>"</i></h1>
           <p>Ideal for landlords willing to prepare property to let</p>
+          <p style="color:white; background-color:rgba(0,0,0,0.6); display:inline; padding:10px 20px 20px 20px;">Call now - 07708989073 </p>
         </div>
         <a href="#house-renovations-in-edinburgh" class="button-red">Find our more</a>
       </section>
@@ -300,7 +302,7 @@ meta description: "07719731397 Cheapest house renovations in Edinburgh - Fixed p
           <div class="col-sm-12 col-md-6 contact-section" style="text-align:left;">
                     <p style="padding-bottom:10px;">Speak to us<br>
                     <hr>
-             <span class="red"> 07719331397</span><br>
+             <span class="red">07708989073</span><br>
              <span class="red">thomas.webdesign</span>
               </p>
           </div>
@@ -345,7 +347,12 @@ meta description: "07719731397 Cheapest house renovations in Edinburgh - Fixed p
             <div class="dialog-inner">
               <h2>Contact Us</h2>
 
-              <form>
+              <%= simple_form_for home_path, url: '/contact' do |t| %>
+                <%= t.input :name %>
+
+                <%= t.submit %>
+
+              <% end %>
  
   <div class="form-group">
     <label for="name" class="muted">Name</label>

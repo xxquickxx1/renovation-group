@@ -88,6 +88,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.0.1)
+      actionpack (>= 4.0.0, < 4.1)
+      activemodel (>= 4.0.0, < 4.1)
     sitemap (0.3.3)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -128,6 +131,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 4.0.0)
   sdoc
+  simple_form
   sitemap
   sqlite3
   twitter-bootstrap-rails
