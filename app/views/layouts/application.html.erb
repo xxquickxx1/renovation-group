@@ -13,7 +13,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<% cache do %>
 
 <!-- Nav -->
 
@@ -76,19 +76,21 @@
 						<div class="col-sm-12 col-md-4 text-center ">
 						
 						    <a class="btn btn-social-icon btn-dropbox btn-lg"><i class="fa fa-dropbox"></i></a>
+
+						     <a href="https://www.facebook.com/profile.php?id=100008815906437" target="_blank" class="btn btn-social-icon btn-facebook btn-lg"><i class="fa fa-facebook"></i></a>
 						
-						    <a class="btn btn-social-icon btn-foursquare btn-lg"><i class="fa fa-foursquare"></i></a>
+						    <a href="https://foursquare.com/user/111876135" target="_blank" class="btn btn-social-icon btn-foursquare btn-lg"><i class="fa fa-foursquare"></i></a>
 						 
-						    <a class="btn btn-social-icon btn-google-plus btn-lg"><i class="fa fa-google-plus"></i></a>
-						    <a class="btn btn-social-icon btn-instagram btn-lg"><i class="fa fa-instagram"></i></a>
-						    <a class="btn btn-social-icon btn-linkedin btn-lg"><i class="fa fa-linkedin"></i></a>
+						    <a href="https://plus.google.com/114647574831121467200" target="_blank" class="btn btn-social-icon btn-google-plus btn-lg"><i class="fa fa-google-plus"></i></a>
+						    <a href="http://instagram.com/renovationgroupedin/" target="_blank" class="btn btn-social-icon btn-instagram btn-lg"><i class="fa fa-instagram"></i></a>
+						    <a href="https://www.linkedin.com/profile/view?id=395449189&trk=nav_responsive_tab_profile" target="_blank" class="btn btn-social-icon btn-linkedin btn-lg"><i class="fa fa-linkedin"></i></a>
 						   
-						    <a class="btn btn-social-icon btn-twitter btn-lg"><i class="fa fa-twitter"></i></a>
+						    <a href="https://twitter.com/renovationedin" target="_blank" class="btn btn-social-icon btn-twitter btn-lg"><i class="fa fa-twitter"></i></a>
 						   
 						</div>
 						<div class="col-sm-12 col-md-4 mobile-info screen-info">
 							07708989073 <br>
-							renovationgroupedin@gmail.com<br>
+							renovationgroupedin@gmail.com<br><br>
 							<span id="cdSiteSeal1"><script type="text/javascript" src="//tracedseals.starfieldtech.com/siteseal/get?scriptId=cdSiteSeal1&amp;cdSealType=Seal1&amp;sealId=55e4ye7y7mb7313f926818ef1fcb7cppdvby7mb7355e4ye797ac3521a815dbcf"></script></span>
 						</div>
 				</div>
@@ -138,6 +140,6 @@
         unslider.data('unslider')[fn]();
     });
 </script>
-
+<% end %>
 </body>
 </html>

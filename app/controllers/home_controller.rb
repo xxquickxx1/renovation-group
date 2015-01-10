@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+	caches_page :index
   def index
   	@contact = ContactMailer.send :new
   end
