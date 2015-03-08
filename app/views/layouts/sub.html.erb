@@ -66,7 +66,7 @@
 
 <%= yield %>
 <% if params[:controller] != "app" %>
-<footer><section class="footer row"><div class="container"><center><h2>Get In Touch</h2></center><div class="row"><div class="col-sm-12 col-md-4"><address>16/2 Ardshiel Avenue<br>EH7 4LL<br>Edinburgh</address></div><div class="col-sm-12 col-md-4 text-center "> <a class="btn btn-social-icon btn-dropbox btn-lg"><i class="fa fa-dropbox"></i></a> <a href="https://www.facebook.com/profile.php?id=100008815906437" target="_blank" class="btn btn-social-icon btn-facebook btn-lg"><i class="fa fa-facebook"></i></a> <a href="https://foursquare.com/user/111876135" target="_blank" class="btn btn-social-icon btn-foursquare btn-lg"><i class="fa fa-foursquare"></i></a> <a href="https://plus.google.com/114647574831121467200" target="_blank" class="btn btn-social-icon btn-google-plus btn-lg"><i class="fa fa-google-plus"></i></a> <a href="http://instagram.com/renovationgroupedin/" target="_blank" class="btn btn-social-icon btn-instagram btn-lg"><i class="fa fa-instagram"></i></a> <a href="https://www.linkedin.com/profile/view?id=395449189&trk=nav_responsive_tab_profile" target="_blank" class="btn btn-social-icon btn-linkedin btn-lg"><i class="fa fa-linkedin"></i></a> <a href="https://twitter.com/renovationedin" target="_blank" class="btn btn-social-icon btn-twitter btn-lg"><i class="fa fa-twitter"></i></a> </div><div class="col-sm-12 col-md-4 mobile-info screen-info">07708989073 <br>renovationgroupedin@gmail.com<br><br><span id="cdSiteSeal1"><script type="text/javascript" src="//tracedseals.starfieldtech.com/siteseal/get?scriptId=cdSiteSeal1&amp;cdSealType=Seal1&amp;sealId=55e4ye7y7mb7313f926818ef1fcb7cppdvby7mb7355e4ye797ac3521a815dbcf"></script></span></div></div></div><div class="row edinburgh-house-renovations"><div class="col-sm-12 col-md-3">House Renovation Edinburgh</div><div class="col-sm-12 col-md-3">Cheap House Renovations</div><div class="col-sm-12 col-md-3">Renovations in Edinburgh</div><div class="col-sm-12 col-md-3">Home Renovation Edinburgh</div></div></section></footer>
+<footer><section class="footer row"><div class="container"><center><h2>Get In Touch</h2></center><div class="row"><div class="col-sm-12 col-md-4"><address>16/2 Ardshiel Avenue<br>EH7 4LL<br>Edinburgh</address></div><div class="col-sm-12 col-md-4 text-center "> <a class="btn btn-social-icon btn-dropbox btn-lg"><i class="fa fa-dropbox"></i></a> <a href="https://www.facebook.com/pages/Renovation-Group-Edin/1519568308307311" target="_blank" class="btn btn-social-icon btn-facebook btn-lg"><i class="fa fa-facebook"></i></a> <a href="https://foursquare.com/user/111876135" target="_blank" class="btn btn-social-icon btn-foursquare btn-lg"><i class="fa fa-foursquare"></i></a> <a href="https://plus.google.com/114647574831121467200" target="_blank" class="btn btn-social-icon btn-google-plus btn-lg"><i class="fa fa-google-plus"></i></a> <a href="http://instagram.com/renovationgroupedin/" target="_blank" class="btn btn-social-icon btn-instagram btn-lg"><i class="fa fa-instagram"></i></a> <a href="https://www.linkedin.com/profile/view?id=395449189&trk=nav_responsive_tab_profile" target="_blank" class="btn btn-social-icon btn-linkedin btn-lg"><i class="fa fa-linkedin"></i></a> <a href="https://twitter.com/renovationedin" target="_blank" class="btn btn-social-icon btn-twitter btn-lg"><i class="fa fa-twitter"></i></a> </div><div class="col-sm-12 col-md-4 mobile-info screen-info">07708989073 <br>renovationgroupedin@gmail.com<br><br><span id="cdSiteSeal1"><script type="text/javascript" src="//tracedseals.starfieldtech.com/siteseal/get?scriptId=cdSiteSeal1&amp;cdSealType=Seal1&amp;sealId=55e4ye7y7mb7313f926818ef1fcb7cppdvby7mb7355e4ye797ac3521a815dbcf"></script></span></div></div></div><div class="row edinburgh-house-renovations"><div class="col-sm-12 col-md-3">House Renovation Edinburgh</div><div class="col-sm-12 col-md-3">Cheap House Renovations</div><div class="col-sm-12 col-md-3">Renovations in Edinburgh</div><div class="col-sm-12 col-md-3">Home Renovation Edinburgh</div></div></section></footer>
 
 <% end %>
 
@@ -139,5 +139,24 @@
   ga('send', 'pageview');
 
 </script>
+
+
+  <script>
+
+    if($( window ).width() > 700){
+        $('.in-view, footer').bind('inview', function(event, visible) {
+      if (visible) {
+
+        $('.aside').fadeOut();
+      } else {
+        $('.aside').fadeIn();
+      }
+    });
+    }
+
+
+
+
+    </script>
 </body>
 </html>

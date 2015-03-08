@@ -1,32 +1,13 @@
 <%meta title: "Bathroom Renovation Edinburgh - Renovation Group", description: "Bathroom renovations Edinburgh. We specialize in quick and cheap renovation services, tiling, painting and more.", keywords: %w(renovation house edinburgh cheap bathroom home affordable renovation services)%>
 
 <section class="row">
-<aside class="col-sm-4 col-md-4 aside">
+
+
+<%= render '/shared/aside' %>
 
 
 
-
-<ul class="sub-left-nav">
-	<li><%= link_to 'Home renovation', root_path %></li>
-	<li><%= link_to 'Bathroom renovation', bathroom_path %>
-</ul>
-<p style="color:grey; font-size:0.8em; margin-top:30px;">Relax! More categories comping up soon.</p>
-
-<ul class="sub-left-nav">
-<li><a href="http://www.house-renovations-edinburgh.com#contact-cheap-house-renovations-edinburgh">Contact</a></li>
-</ul>
-
-
-
-
-
-
-
-
-
-</aside>
-
-<section class="col-sm-7 col-md-7 main-section-sub">
+<section class="col-sm-12 col-md-7 main-section-sub">
 		<h1 class="sub-h1">Bathroom Renovation Edinburgh</h1>
 
 		<p>For the past 10 years members of the Renovation Group have been working around Edinburgh to gain experience and to learn the most effective ways of providing quality service.</p>
@@ -90,16 +71,4 @@
 
 
 
-    <script>
-
-$('.in-view, footer').bind('inview', function(event, visible) {
-      if (visible) {
-
-        $('.aside').fadeOut();
-      } else {
-       	$('.aside').fadeIn();
-      }
-    });
-
-
-    </script>
+  
