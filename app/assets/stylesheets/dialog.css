@@ -1,3 +1,10 @@
+.animated{
+	opacity: 0;
+}
+
+.zoomed{
+	opacity: 0;
+}
 .dialog,
 .dialog__overlay {
 	width: 100%;

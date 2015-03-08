@@ -1,4 +1,10 @@
 Treehouse::Application.routes.draw do
+  
+  get '/bathroom-renovation-edinburgh', to: 'bathrooms#index', as: :bathroom
+  get '/plasterers-edinburgh', to: 'plastering#index', as: :plastering
+  get '/home-renovation-edinburgh-intro', to: 'app#index', as: :app
+  resources :websites
+  get '/house-renovation-cost-calculator', to: 'pricing#index', as: :pricing
   root to: 'home#index'
 
   post '/contact', to: 'home#create', as: :home

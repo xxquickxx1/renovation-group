@@ -17,6 +17,14 @@
 //= require_tree .
 
 
+$(document).ready(function(){
+       $(".shuffle-me").shuffleImages({
+         target: ".images > img",
+         trigger: "imageHover",
+         hoverTrigger: 1100
+       });
+    });
+
   var nice = false;
 
   $(document).ready(function() {
@@ -27,6 +35,17 @@
       cursorborder: false
     });
   });
+
+  $(document).ready(function() {
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+});
 
 
   jQuery(document).ready(function($){
@@ -202,9 +221,6 @@ $(function() {
     }
   });
 });
-
-
-
 
 
 

@@ -29,3 +29,12 @@ color: white;
 .btn-lg{
 	
 }
+
+.panel-success>.panel-heading{
+	background-color: #73a839;
+	color:white;
+}
+
+.status .panel-title{
+	font-size: 2em;
+}
